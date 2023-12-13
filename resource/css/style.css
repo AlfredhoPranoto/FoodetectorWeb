@@ -1,0 +1,372 @@
+:root {
+   --navbar: #303030;
+   --nav-hover: #c8e164;
+   --body-bg: #6b6a5f;
+   --text-color: #ffffff;
+}
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-family: Poppins, sans-serif;
+   scroll-behavior: smooth;
+   /* overflow-x: hidden; */
+}
+
+body {
+   width: 100%;
+   height: 100%;
+}
+
+header {
+   display: inline;
+}
+
+header .navbar {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--navbar);
+   width: 100%;
+   top: 0;
+   position: sticky;
+   z-index: 999;
+}
+
+header .navbar .logo {
+   display: flex;
+   padding-inline-start: 4rem;
+}
+
+header .navbar .logo img {
+   width: 320px;
+}
+
+header .navbar .barBtn {
+   display: none;
+}
+
+header .navbar .barBtn i {
+   color: #ffffff;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+header .navbar ul {
+   display: flex;
+   list-style-type: none;
+   align-items: center;
+   gap: 5rem;
+   padding-inline-end: 8rem;
+}
+
+header .navbar ul li a {
+   text-decoration: none;
+   color: #ffffff;
+   border: 16px solid transparent;
+   padding-inline: 5px;
+   border-radius: 999px;
+   font-size: 1.3rem;
+   transition: all 0.2s ease-in-out;
+}
+
+header .navbar ul li a:hover {
+   background-color: var(--nav-hover);
+   color: #000000;
+}
+
+main .container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   color: var(--text-color);
+   width: 100%;
+}
+
+#home,
+#about-us,
+#feature {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   background-color: var(--body-bg);
+   padding: 15px;
+}
+
+main .container #home {
+   margin-top: -115px;
+   padding-top: 0;
+   height: calc(100vh + 115px);
+}
+
+main .container #home .logo img {
+   width: 300px;
+}
+
+main .container #home .desc h1 {
+   font-size: 5rem;
+}
+main .container #home .desc p {
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+
+main .container #about-us {
+   height: 90vh;
+   text-align: center;
+   flex-direction: column;
+   gap: 0;
+}
+
+main .container #about-us h2 {
+   font-size: 4rem;
+}
+
+main .container #about-us p {
+   font-size: 1.2rem;
+   font-weight: 500;
+   margin: auto;
+   margin-block: 10px;
+}
+
+main .container #feature {
+   padding: 120px 0 0 0;
+   height: 100vh;
+   align-items: normal;
+   text-align: center;
+   gap: 0;
+   flex-direction: column;
+}
+
+main .container #feature h2 {
+   font-size: 2rem;
+   text-align: center;
+}
+
+main .container #feature .slideshow {
+   max-width: 90%;
+   position: relative;
+   margin: 10px auto;
+}
+
+main .container #feature .slideshow .slides img {
+   width: 58%;
+   z-index: -999;
+   display: block;
+   margin: auto;
+}
+
+main .container #feature .slideshow a {
+   cursor: pointer;
+   position: absolute;
+   width: auto;
+   top: 40%;
+   padding: 8px;
+   font-weight: bold;
+   font-size: 50px;
+   color: black;
+   transition: all 0.5s ease-in-out;
+   user-select: none;
+}
+
+main .container #feature .slideshow .prev {
+   left: calc(20% + 14px);
+   border-radius: 0 2px 2px 0;
+}
+
+main .container #feature .slideshow .next {
+   right: calc(20% + 14px);
+   border-radius: 3px 0 0 3px;
+}
+
+main .container #feature .slideshow .prev:hover {
+   background-color: #000000;
+   color: #ffffff;
+}
+
+main .container #feature .slideshow .next:hover {
+   background-color: #000000;
+   color: #ffffff;
+}
+
+main .container #feature .slideshow .slides {
+   display: none;
+}
+
+main .container #feature .slideshow .slides .caption {
+   color: #000000;
+   font-size: 1.3rem;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+}
+
+.dot-group {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   background-color: #ffffff;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+   background-color: #000000;
+}
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {
+      opacity: 0.4;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   header .navbar .logo {
+      padding-inline-start: 0rem;
+      align-items: center;
+   }
+   header .navbar .logo img {
+      width: 260px;
+      align-items: center;
+      display: flex;
+   }
+
+   header .navbar ul {
+      display: none;
+      position: fixed;
+      top: 80px;
+      width: 100%;
+      height: 30vh;
+      background-color: var(--navbar);
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      gap: 3rem;
+      padding-inline-end: 0rem;
+      text-align: center;
+   }
+
+   header .navbar .nav.responsive {
+      display: flex;
+   }
+   header .navbar ul li a {
+      padding: 0;
+      border: 12px solid transparent;
+      padding-inline: 4px;
+   }
+
+   header .navbar .barBtn {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+   }
+
+   header .navbar .barBtn i {
+      display: flex;
+   }
+
+   main .container #home {
+      margin-top: 0px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      height: calc(80vh + 20px);
+      text-align: center;
+   }
+
+   main .container #home .logo img {
+      width: 200px;
+   }
+
+   main .container #home .desc h1 {
+      font-size: 3rem;
+   }
+
+   main .container #home .desc p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+   }
+
+   main .container #about-us {
+      height: calc(50vh + 100px);
+      flex-direction: column;
+      gap: 0;
+   }
+
+   main .container #about-us h2 {
+      font-size: 3rem;
+   }
+
+   main .container #about-us p {
+      font-size: 1rem;
+   }
+
+   main .container #feature {
+      padding: 0px 0 0 0;
+      height: calc(50vh + 100px);
+      gap: 0;
+      flex-direction: column;
+   }
+
+   main .container #feature h2 {
+      font-size: 2rem;
+   }
+
+   main .container #feature .slideshow {
+      max-width: 100%;
+      position: relative;
+      margin: 10px auto;
+   }
+
+   main .container #feature .slideshow .slides img {
+      width: 100%;
+   }
+
+   main .container #feature .slideshow a {
+      padding: 6px;
+      font-size: 40px;
+   }
+
+   main .container #feature .slideshow .prev {
+      left: 0;
+      border-radius: 0 1px 1px 0;
+   }
+
+   main .container #feature .slideshow .next {
+      right: 0;
+      border-radius: 1px 0 0 1px;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   header .navbar ul {
+      padding-top: 20px;
+      gap: 2.2rem;
+   }
+   header .navbar .barBtn {
+      margin-right: 30px;
+   }
+}
