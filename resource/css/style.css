@@ -346,6 +346,12 @@ footer .social a:hover {
    background-color: var(--text-color);
 }
 
+@media screen and (max-width: 700px) {
+   footer h2 {
+      font-size: 0.8rem;
+   }
+}
+
 @media screen and (max-width: 600px) {
    header .navbar .logo {
       padding-inline-start: 0rem;
@@ -531,8 +537,26 @@ footer .social a:hover {
    }
 }
 
+   @media screen and (max-width: 380px) {
+   footer h2 {
+      font-size: 0.4rem;
+   }
+}
+
 @media screen and (max-width: 360px) {
    footer h2 {
       font-size: 0.35rem;
       text-align: center;
    }
+
+@media screen and (max-width: 300px) {
+   footer h2 {
+      font-size: 0.4rem;
+   }
+}
+
+@media screen and (max-width: 200px) {
+   footer h2 {
+      font-size: 0.4rem;
+   }
+}
