@@ -22,6 +22,8 @@ body {
    height: 100%;
 }
 
+C
+
 header {
    display: inline;
 }
@@ -78,6 +80,8 @@ header .navbar ul li a:hover {
    color: #000000;
 }
 
+// End of Navbar Style
+
 main {
    display: flex;
 }
@@ -101,6 +105,8 @@ main .container {
    padding: 15px;
 }
 
+
+// Start of Styling Home
 main .container #home {
    margin-top: -115px;
    padding-top: 0;
@@ -118,6 +124,8 @@ main .container #home .desc p {
    font-size: 1.3rem;
    font-weight: 600;
 }
+
+// Start of styling About Us
 
 main .container #about-us {
    height: 90vh;
@@ -137,6 +145,9 @@ main .container #about-us p {
    margin-block: 10px;
 }
 
+
+// Start of Styling Feature
+
 main .container #feature {
    padding: 120px 0 0 0;
    height: 100vh;
@@ -150,6 +161,9 @@ main .container #feature h2 {
    font-size: 2rem;
    text-align: center;
 }
+
+
+// Start of styling Slider
 
 main .container #feature .slideshow {
    max-width: 90%;
@@ -245,6 +259,8 @@ main .container #feature .slideshow .slides .caption {
    }
 }
 
+
+// Start of styling Aside
 main aside {
    width: 15%;
 }
@@ -264,6 +280,7 @@ main aside .card .userpic img {
    width: 180px;
 }
 
+// Start of styling Footer
 footer {
    display: flex;
    flex-direction: column;
