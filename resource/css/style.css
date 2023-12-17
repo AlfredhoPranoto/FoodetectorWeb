@@ -531,7 +531,7 @@ footer .social a:hover {
    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 360px) {
    footer h2 {
       font-size: 0.35rem;
       text-align: center;
