@@ -22,6 +22,7 @@
       <title>Foodetector</title>
    </head>
    <body>
+      <!-- Start of Navigation Bar -->
       <header>
          <nav class="navbar">
             <div class="logo">
@@ -30,7 +31,7 @@
                </a>
             </div>
             <ul class="nav" id="nav">
-               <li><a href="#home">Home</a></li>
+               <li><a href="#">Home</a></li>
                <li><a href="#about-us">About Us</a></li>
                <li><a href="#feature">Feature</a></li>
             </ul>
@@ -39,7 +40,9 @@
             </label>
          </nav>
       </header>
+      <!-- End of Navigation Bar -->
 
+      <!-- Start of Main Content -->
       <main>
          <div class="container">
             <article id="home">
@@ -50,10 +53,11 @@
                </div>
                <div class="desc">
                   <h1>Foodetector</h1>
-                  <p>Detect Your Food with Foodetector</p>
+                  <p>Easy Recipe & Food</p>
                </div>
             </article>
 
+            <!-- Start of About Us -->
             <article id="about-us">
                <h2>About Us</h2>
                <p>
@@ -63,50 +67,61 @@
                   makanan yang dirumah sehingga tidak perlu keluar untuk membeli.
                </p>
             </article>
+            <!-- End of About Us -->
 
+            <!-- Start of Feature -->
             <article id="feature">
                <h2>Feature</h2>
 
+               <!-- Start of Slider -->
                <div class="slideshow">
                   <div class="slides fade">
                      <img src="resource/img/login.png" alt="" />
                      <div class="caption">Login</div>
                   </div>
 
+                  <!-- Slide 1-->
                   <div class="slides fade">
                      <img src="resource/img/preference.png" alt="" />
                      <div class="caption">Preference</div>
                   </div>
 
+                  <!-- Slide 2-->
                   <div class="slides fade">
                      <img src="resource/img/home.png" alt="" />
                      <div class="caption">Home</div>
                   </div>
 
+                  <!-- Slide 3-->
                   <div class="slides fade">
                      <img src="resource/img/search.png" alt="" />
                      <div class="caption">Search</div>
                   </div>
 
+                  <!-- Slide 4-->
                   <div class="slides fade">
                      <img src="resource/img/add_recipe.png" alt="" />
                      <div class="caption">Add Recipe</div>
                   </div>
 
+                  <!-- Slide 5-->
                   <div class="slides fade">
                      <img src="resource/img/save_recipe.png" alt="" />
                      <div class="caption">Save Recipe</div>
                   </div>
 
+                  <!-- Slide 6-->
                   <div class="slides fade">
                      <img src="resource/img/virtual_pantry.png" alt="" />
                      <div class="caption">Virtual Pantry</div>
                   </div>
 
+                  <!-- Next and Previous Button-->
                   <a onclick="nextSlide(-1)" class="prev"><</a>
                   <a onclick="nextSlide(1)" class="next">></a>
                </div>
 
+               <!-- Slide Indicator -->
                <div class="dot-group">
                   <span onclick="currentSlide(1)" class="dot"></span>
                   <span onclick="currentSlide(2)" class="dot"></span>
@@ -117,8 +132,56 @@
                   <span onclick="currentSlide(7)" class="dot"></span>
                </div>
             </article>
+            <!-- End of Feature !-->
          </div>
+
+         <!-- Start of Sidebar-->
+         <aside>
+            <div class="card">
+               <div class="userpic">
+                  <img src="resource/img/user.jpeg" alt="user" />
+               </div>
+               <h2>Alfredho Pranoto</h2>
+               <p>Mahasiswa Bina Nusantara</p>
+            </div>
+         </aside>
+         <!-- End of Sidebbar -->
       </main>
+
+      <!-- Start of footer-->
+      <footer>
+         <div class="footerlink">
+            <div class="logo">
+               <img src="resource/img/foodetector_logo.png" alt="logo" />
+            </div>
+            <!-- Footer Link -->
+            <ul>
+               <li><a href="javascript:void(0)">Foodetector</a></li>
+               <li><a href="javascript:void(0)">Recipe</a></li>
+               <li><a href="javascript:void(0)">Ingredients</a></li>
+               <li><a href="javascript:void(0)">Store</a></li>
+            </ul>
+         </div>
+         <!-- Footer Social Media Link -->
+         <div class="social">
+            <a target="_blank" href="https://twitter.com/FoodetectorApp">
+               <i class="fa-brands fa-x-twitter"> </i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/foodetectorapp/">
+               <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a target="_blank" href="https://tiktok.com/@foodetectorapp">
+               <i class="fa-brands fa-tiktok"> </i>
+            </a>
+            <a
+               target="_blank"
+               href="https://www.youtube.com/channel/UC_CQ2RMbUpu0RDooHzAcMCg">
+               <i class="fa-brands fa-youtube"> </i>
+            </a>
+         </div>
+         <h2>Copyright &copy; 2023 - Foodetector, All rights reserved</h2>
+      </footer>
+      <!-- End of footer -->
       <script src="script/script.js"></script>
    </body>
 </html>
